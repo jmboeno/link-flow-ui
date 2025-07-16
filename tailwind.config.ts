@@ -73,8 +73,8 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-primary': 'linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 70%))',
+				'gradient-subtle': 'linear-gradient(180deg, hsl(248 250 252), hsl(210 40% 96%))'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
