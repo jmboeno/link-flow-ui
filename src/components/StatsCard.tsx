@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import React from "react"; // Importado React para React.memo
 
 interface StatsCardProps {
   title: string;
@@ -7,10 +8,10 @@ interface StatsCardProps {
   trend?: "up" | "down" | "neutral";
 }
 
-export function StatsCard({ title, value, icon, trend = "neutral" }: StatsCardProps) {
+export const StatsCard = React.memo(function StatsCard({ title, value, icon, trend = "neutral" }: StatsCardProps) {
   const trendColors = {
     up: "text-success",
-    down: "text-destructive", 
+    down: "text-destructive",
     neutral: "text-muted-foreground"
   };
 
@@ -27,4 +28,4 @@ export function StatsCard({ title, value, icon, trend = "neutral" }: StatsCardPr
       </div>
     </Card>
   );
-}
+});

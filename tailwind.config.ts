@@ -14,7 +14,8 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				// Removido o max-width fixo para telas 2xl para permitir que o conteúdo se estenda
+				// '2xl': '1400px'
 			}
 		},
 		extend: {
@@ -74,7 +75,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 70%))',
-				'gradient-subtle': 'linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%))'
+				'gradient-subtle': 'var(--gradient-subtle)' // Usa variável CSS para adaptação de tema
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',

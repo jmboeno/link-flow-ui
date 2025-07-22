@@ -1,3 +1,4 @@
+/* link-flow-ui/src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +46,7 @@
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 70%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%)); /* Tema claro */
 
     /* Shadows */
     --shadow-elegant: 0 4px 6px -1px hsl(142 69% 58% / 0.1), 0 2px 4px -1px hsl(142 69% 58% / 0.06);
@@ -99,6 +100,10 @@
     --border: 217 32% 17%;
     --input: 217 32% 17%;
     --ring: 142 69% 58%;
+
+    /* Gradients */
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--card)), hsl(var(--secondary))); /* Tema escuro: Gradiente de card para secondary */
+
     --sidebar-background: 240 6% 10%;
     --sidebar-foreground: 240 5% 96%;
     --sidebar-primary: 142 69% 58%;
